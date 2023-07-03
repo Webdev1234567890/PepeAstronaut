@@ -2,7 +2,7 @@
 	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href>
-	<title>Pepe Armstrong</title>
+	<title>Pepe Astronaut</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Bigtech » Feed" href="https://themedox.com/bigtech/feed/">
@@ -165,7 +165,7 @@ html:root { --tg-secondary-color: #564DCA}
                                 
     <ul class="clearfix">
                 <li class="facebook">
-            <a href="https://t.me/PepeArmstrongPortal" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://t.me/PepeAstronautPortal" target="_blank"><i class="fab fa-telegram"></i></a>
         </li>
         
                 <li class="twitter">
@@ -220,7 +220,7 @@ html:root { --tg-secondary-color: #564DCA}
                     <ul>
 
                                                     <li>
-                                <a href="https://t.me/PepeArmstrongPortal" target="_blank" class="banner-social-link">
+                                <a href="https://t.me/PepeAstronautPortal" target="_blank" class="banner-social-link">
                                                                             <i aria-hidden="true" class="fab fa-telegram"></i>                                                                    </a>
                                 <span>Telegram</span>
                             </li>
@@ -256,21 +256,32 @@ html:root { --tg-secondary-color: #564DCA}
 								<div class="elementor-element elementor-element-4ed213c elementor-widget elementor-widget-countdown" data-id="4ed213c" data-element_type="widget" data-widget_type="countdown.default">
 				<div class="elementor-widget-container">
 			
-		<script>
-            jQuery(document).ready(function($){
+                    <script>
+                        jQuery(document).ready(function($){
+                        
+                            /*=============================================
+                                =         Upcoming Time           =
+                            =============================================*/
+                            var element = $('#countdown-gampang');
+                            
 
-                /*=============================================
-                    =         Upcoming Time           =
-                =============================================*/
-                var element = $('#countdown-gampang');
-                var finish_d = new Date();
-                finish_d.setDate(finish_d.getDate() + 0,0);
-                element.CountdownGampang({
-                    rampung: finish_d,
-                });
+                            var currentDate = new Date();
+                            
+ 
+                            var finish_d = new Date(currentDate.getFullYear(), currentDate.getMonth(), 5, 15, 0, 0);
+                            
 
-            });
-        </script>
+                            if (currentDate > finish_d) {
+
+                                finish_d.setDate(finish_d.getDate() + 7);
+                            }
+                            
+                            element.CountdownGampang({
+                                rampung: finish_d,
+                            });
+                        
+                        });
+                        </script>                        
 
         <!-- countdown-area -->
         <section id="countdown" class="countdown-area-two">
@@ -278,7 +289,7 @@ html:root { --tg-secondary-color: #564DCA}
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="countdown-wrap">
-                            <h2 class="title">Lift Of In...</h2>
+                            <h2 class="title">Pepe Astronaut launches in...</h2>
                             <div id="countdown-gampang"></div>
                         </div>
                     </div>
@@ -316,12 +327,12 @@ html:root { --tg-secondary-color: #564DCA}
                         <div class="about-content-two wow fadeInRight" data-wow-delay=".2s">
 
                             <div class="section-title section-title-two mb-15">
-                                <span class="sub-title">ABOUT PEPE ARMSTRONG</span>
+                                <span class="sub-title">ABOUT PEPE ASTRONAUT</span>
                                 <h2 class="title">''One small step for Pepe, one giant leap for pepekind''</h2>                            </div>
 
-                                                            <p>Meet Pepe Armstrong, the first frog to have ever set foot on the moon! Pepe's historic feat is one that has been immortalized in the annals of space exploration, and his name has become synonymous with adventure and bravery.
+                                                            <p>Meet Pepe Astronaut, the first frog to have ever set foot on the moon! Pepe's historic feat is one that has been immortalized in the annals of space exploration, and his name has become synonymous with adventure and bravery.
                                                             </p>
-                                                            <p>Now, Pepe Armstrong is once again making history by inviting you on a journey to the moon. After months of negotiations with Pelon Musk and SpaceX, a rocket was built to take you to the capitol built on the dark side of the moon. This is an opportunity of a lifetime, and Pepe reccomends you to not miss the train (or the rocket).
+                                                            <p>Now, Pepe Astronaut is once again making history by inviting you on a journey to the moon. After months of negotiations with Pelon Musk and SpaceX, a rocket was built to take you to the capitol built on the dark side of the moon. This is an opportunity of a lifetime, and Pepe reccomends you to not miss the train (or the rocket).
                                                             </p>
                             
                             <div class="about-list">
@@ -365,7 +376,7 @@ html:root { --tg-secondary-color: #564DCA}
             <div class="section-title">
 
                 <span class="sub-title">WHY CHOOSE US</span>
-                <h2 class="title">Why You Choose <br> Pepe Armstrong</h2>
+                <h2 class="title">Why You Choose <br> Pepe Astronaut</h2>
                 
             </div>
 
@@ -523,8 +534,8 @@ html:root { --tg-secondary-color: #564DCA}
                     <div class="row justify-content-center">
                         <div class="col-xl-6">
                             <div class="section-title section-title-two text-center mb-65">
-                                <span class="sub-title">OUr Roadmap</span>
-                                <h2 class="title">Pepe Armstrong Strategy and <br> Project Plan</h2>                            </div>
+                                <span class="sub-title">Our Roadmap</span>
+                                <h2 class="title">Pepe Astronaut Strategy and <br> Project Plan</h2>                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -679,7 +690,7 @@ html:root { --tg-secondary-color: #564DCA}
                                                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne-0">
                                         <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-0" aria-expanded="true" aria-controls="collapseOne-0">
-                                            Q: What is the tax for Pepe Armstrong?                                       </button>
+                                            Q: What is the tax for Pepe Astronaut?                                       </button>
                                     </h2>
                                     <div id="collapseOne-0" class="accordion-collapse collapse show" aria-labelledby="headingOne-0" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
@@ -701,11 +712,11 @@ html:root { --tg-secondary-color: #564DCA}
                                                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne-2">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="true" aria-controls="collapseOne-2">
-                                        Q: Where can I buy Pepe Armstrong?                                        </button>
+                                        Q: Where can I buy Pepe Astronaut?                                        </button>
                                     </h2>
                                     <div id="collapseOne-2" class="accordion-collapse collapse " aria-labelledby="headingOne-2" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <p>A: Pepe Armstrong can be bought and sold on various swap like Uniswap. It's important to do your own research and
+                                            <p>A: Pepe Astronaut can be bought and sold on various swap like Uniswap. It's important to do your own research and
                                             choose a reputable exchange with high liquidity and good security measures.</p>
                                         </div>
                                     </div>
@@ -713,11 +724,11 @@ html:root { --tg-secondary-color: #564DCA}
                                                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne-3">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-3" aria-expanded="true" aria-controls="collapseOne-3">
-                                            Q: What wallets can I use to store Pepe Armstrong?                                        </button>
+                                            Q: What wallets can I use to store Pepe Astronaut?                                        </button>
                                     </h2>
                                     <div id="collapseOne-3" class="accordion-collapse collapse " aria-labelledby="headingOne-3" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <p>A: Pepe Armstrong is an ERC-20 token, which means it can be stored in any Ethereum-compatible wallet. Popular options include
+                                            <p>A: Pepe Astronaut is an ERC-20 token, which means it can be stored in any Ethereum-compatible wallet. Popular options include
                                             MyEtherWallet, MetaMask, and Ledger.</p>
                                         </div>
                                     </div>
@@ -725,11 +736,11 @@ html:root { --tg-secondary-color: #564DCA}
                                                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne-4">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-4" aria-expanded="true" aria-controls="collapseOne-4">
-                                        Q: What is the Pepe Armstrong community like?                                        </button>
+                                        Q: What is the Pepe Astronaut community like?                                        </button>
                                     </h2>
                                     <div id="collapseOne-4" class="accordion-collapse collapse " aria-labelledby="headingOne-4" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <p>A: The Pepe Armstrong community is active and engaged, with members from all around the world. The project has a strong social
+                                            <p>A: The Pepe Astronaut community is active and engaged, with members from all around the world. The project has a strong social
                                             media presence and regularly hosts community events and giveaways.</p>
                                         </div>
                                     </div>
@@ -813,7 +824,7 @@ html:root { --tg-secondary-color: #564DCA}
                                 
         <ul>
                     <li>
-                <a href="https://t.me/PepeArmstrongPortal">
+                <a href="https://t.me/PepeAstronautPortal">
                     <i class="fab fa-telegram"></i>
                 </a>
             </li>
@@ -839,7 +850,7 @@ html:root { --tg-secondary-color: #564DCA}
 
                     <div class="col-lg-5">
                         <div class="copyright-text">
-                            <p>Copyright © 2023 Pepe Armstrong All Rights Reserved.</p>
+                            <p>Copyright © 2023 Pepe Astronaut All Rights Reserved.</p>
                         </div>
                     </div>
 
