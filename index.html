@@ -258,36 +258,42 @@ html:root { --tg-secondary-color: #564DCA}
 			
                     <script>
                         jQuery(document).ready(function($){
-                    
+                        
                             /*=============================================
                                 =         Upcoming Time           =
                             =============================================*/
                             var element = $('#countdown-gampang');
-                            
+                        
                             var currentDate = new Date();
                             
-                            var finish_d = new Date(Date.UTC(2023, 6, 6, 13, 0, 0)); 
+                            // Stel de target datum en tijd in op 6 juli 2023, 13:00 UTC
+                            var targetDate = new Date(Date.UTC(2023, 6 - 1, 6, 13, 0, 0)); // Maanden worden zero-based
                             
-                            var timeDifference = finish_d.getTime() - currentDate.getTime();
+                            // Controleer of de target tijd nog niet is verstreken
+                            if (currentDate < targetDate) {
+                                // Bereken het verschil tussen de huidige tijd en de target tijd in milliseconden
+                                var timeDifference = targetDate.getTime() - currentDate.getTime();
                             
-                            var countdown = element.CountdownGampang({
-                                rampung: timeDifference,
-                                onEnd: function(){
-
-                                    console.log("We launched!");
-                                }
-                            });
-                    
+                                // Start de countdown met het verschil in milliseconden
+                                element.CountdownGampang({
+                                    rampung: timeDifference,
+                                });
+                            } else {
+                                // De target tijd is al verstreken, geef een bericht weer dat de countdown is afgelopen
+                                element.text('We Are Live!');
+                            }
+                        
                         });
-                    </script>                                         
-
+                        </script>                        
+                                                           
+                                                    
         <!-- countdown-area -->
         <section id="countdown" class="countdown-area-two">
             <div class="container custom-container-four">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="countdown-wrap">
-                            <h2 class="title">Pepe Astronaut launches in...</h2>
+                            <h2 class="title">Pepe Astronaut launches on July 6 13:00 UTC</h2>
                             <div id="countdown-gampang"></div>
                         </div>
                     </div>
