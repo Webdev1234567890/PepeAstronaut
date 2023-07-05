@@ -265,27 +265,23 @@ html:root { --tg-secondary-color: #564DCA}
                             var element = $('#countdown-gampang');
                         
                             var currentDate = new Date();
+                            var currentUTCDate = new Date(currentDate.getUTCFullYear(), currentDate.getUTCMonth(), currentDate.getUTCDate(), currentDate.getUTCHours(), currentDate.getUTCMinutes(), currentDate.getUTCSeconds());
                             
-                            // Stel de target datum en tijd in op 6 juli 2023, 13:00 UTC
-                            var targetDate = new Date(Date.UTC(2023, 6 - 1, 6, 13, 0, 0)); // Maanden worden zero-based
+                            var targetDate = new Date(Date.UTC(2023, 6 - 1, 6, 13, 0, 0)); 
                             
-                            // Controleer of de target tijd nog niet is verstreken
-                            if (currentDate < targetDate) {
-                                // Bereken het verschil tussen de huidige tijd en de target tijd in milliseconden
-                                var timeDifference = targetDate.getTime() - currentDate.getTime();
+                            if (currentUTCDate < targetDate) {
+                                var timeDifference = targetDate.getTime() - currentUTCDate.getTime();
                             
-                                // Start de countdown met het verschil in milliseconden
                                 element.CountdownGampang({
                                     rampung: timeDifference,
                                 });
                             } else {
-                                // De target tijd is al verstreken, geef een bericht weer dat de countdown is afgelopen
-                                element.text('We Are Live!');
+                                element.text('BE READY...');
                             }
                         
                         });
-                        </script>                        
-                                                           
+                        </script>
+                                                
                                                     
         <!-- countdown-area -->
         <section id="countdown" class="countdown-area-two">
