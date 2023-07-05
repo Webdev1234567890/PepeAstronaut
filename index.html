@@ -169,7 +169,7 @@ html:root { --tg-secondary-color: #564DCA}
         </li>
         
                 <li class="twitter">
-            <a href="https://twitter.com/PepeArmstrong" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/astronaut_pepe" target="_blank"><i class="fab fa-twitter"></i></a>
         </li>
         
                 
@@ -225,7 +225,7 @@ html:root { --tg-secondary-color: #564DCA}
                                 <span>Telegram</span>
                             </li>
                                                     <li>
-                                <a href="https://twitter.com/PepeArmstrong" target="_blank" class="banner-social-link">
+                                <a href="https://twitter.com/astronaut_pepe" target="_blank" class="banner-social-link">
                                                                             <i aria-hidden="true" class="fab fa-twitter"></i>                                                                    </a>
                                 <span>Twitter</span>
                             </li>
@@ -258,30 +258,28 @@ html:root { --tg-secondary-color: #564DCA}
 			
                     <script>
                         jQuery(document).ready(function($){
-                        
+                    
                             /*=============================================
                                 =         Upcoming Time           =
                             =============================================*/
                             var element = $('#countdown-gampang');
                             
-
                             var currentDate = new Date();
                             
- 
-                            var finish_d = new Date(currentDate.getFullYear(), currentDate.getMonth(), 5, 15, 0, 0);
+                            var finish_d = new Date(Date.UTC(2023, 6, 6, 13, 0, 0)); 
                             
-
-                            if (currentDate > finish_d) {
-
-                                finish_d.setDate(finish_d.getDate() + 7);
-                            }
+                            var timeDifference = finish_d.getTime() - currentDate.getTime();
                             
-                            element.CountdownGampang({
-                                rampung: finish_d,
+                            var countdown = element.CountdownGampang({
+                                rampung: timeDifference,
+                                onEnd: function(){
+
+                                    console.log("We launched!");
+                                }
                             });
-                        
+                    
                         });
-                        </script>                        
+                    </script>                                         
 
         <!-- countdown-area -->
         <section id="countdown" class="countdown-area-two">
@@ -830,7 +828,7 @@ html:root { --tg-secondary-color: #564DCA}
             </li>
         
                     <li>
-                <a href="https://twitter.com/PepeArmstrong">
+                <a href="https://twitter.com/astronaut_pepe">
                     <i class="fab fa-twitter"></i>
                 </a>
             </li>
